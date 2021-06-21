@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  border: thin black solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header__left {
+    display: flex;
+    list-style: none; }
+  .header__nav-item-list {
+    display: flex;
+    list-style-type: none; }
+  .header__nav-item {
+    padding: 16px 40PX; }
+    .header__nav-item a {
+      text-decoration: none;
+      color: black; }
+  .header__right a {
+    text-decoration: none;
+    color: black; }
