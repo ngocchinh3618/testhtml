@@ -1,9 +1,11 @@
 //helpers
 @import 'helpers/variables';
+@import 'helpers/mixin';
 // base
 @import 'base/reset';
 //components
 @import 'components/button';
+@import 'components/postcode';
 //reposive
 @import 'reponsives/reponsive';
 // layouts

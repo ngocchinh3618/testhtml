@@ -1,0 +1,8 @@
+.postcode {
+    background-color: $yellow-600;
+    &__title {
+        color: $navyblue-600;
+        font-weight: $fw-6;
+        font-size: $fs-20;
+    }
+}

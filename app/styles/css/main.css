@@ -3,22 +3,104 @@
   padding: 0;
   box-sizing: border-box; }
 
-.header {
-  border: thin black solid;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  .header__left {
-    display: flex;
-    list-style: none; }
-  .header__nav-item-list {
-    display: flex;
-    list-style-type: none; }
-  .header__nav-item {
-    padding: 16px 40PX; }
-    .header__nav-item a {
+.btn-navyblue {
+  background-color: #140A9A;
+  color: white; }
+  .btn-navyblue:hover {
+    color: whitesmoke; }
+
+.postcode {
+  background-color: #FFC82F; }
+  .postcode__title {
+    color: #140A9A;
+    font-weight: 600;
+    font-size: 20px; }
+
+body {
+  background-color: #f5f3f3;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.43; }
+
+.header .navbar {
+  box-shadow: -4px 0 14px -2px #A5ABAF; }
+  .header .navbar .container .img-logo {
+    width: 280px; }
+    @media (max-width: 480px) {
+      .header .navbar .container .img-logo {
+        width: 200px; } }
+  .header .navbar .container .width-content {
+    width: 90%;
+    justify-content: space-around;
+    color: #1B232A;
+    font-size: 20px; }
+    .header .navbar .container .width-content .btn {
+      font-size: 22px; }
+
+.content .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0; }
+
+.content .content-start {
+  margin-top: 60px; }
+  .content .content-start__left {
+    text-align: center; }
+    .content .content-start__left__image {
+      width: 580px; }
+      @media (max-width: 480px) {
+        .content .content-start__left__image {
+          width: 100px; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .content .content-start__left__image {
+          width: 300px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .content .content-start__left__image {
+          width: 500px; } }
+      @media (min-width: 1024px) and (max-width: 1399px) {
+        .content .content-start__left__image {
+          width: 480px; } }
+  .content .content-start__right .content-start__title {
+    font-size: 52px; }
+  .content .content-start__right .price__card {
+    width: 300px;
+    color: white;
+    background-color: #140A9A;
+    border-radius: 5px; }
+    .content .content-start__right .price__card__title {
+      font-weight: 600; }
+    .content .content-start__right .price__card__total {
+      font-size: 24px;
+      font-weight: 600; }
+  .content .content-start__right .price__card:first-child {
+    margin-right: 36px; }
+    @media (max-width: 480px) {
+      .content .content-start__right .price__card:first-child {
+        margin-right: 0; } }
+  .content .content-start__right .note .material-icons.orange600 {
+    color: #EEAA02; }
+  .content .content-start__right .note__content {
+    margin-left: 5px; }
+    .content .content-start__right .note__content .note__link {
       text-decoration: none;
-      color: black; }
-  .header__right a {
-    text-decoration: none;
-    color: black; }
+      color: #140A9A;
+      font-weight: 900; }
+
+.content .content-end__title {
+  font-size: 24px;
+  font-weight: 700; }
+
+.content .content-end__card-item .card-img-top {
+  width: 100%;
+  height: 200px; }
+
+.content .content-end__card-item .card-body .card-title {
+  font-size: 18px;
+  color: #140A9A; }
+
+.content .content-end__card-item .card-body .card-size {
+  font-weight: 700; }
+
+.content .content-end .content-end__warranty {
+  font-size: 14px; }
+
+.content .content-end .postcode-pd {
+  padding: 20px 250px; }

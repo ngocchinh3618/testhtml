@@ -1,150 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/css/main.css">
+    <title>Hello, world!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+    <!-- header nav -->
     <header class="header">
-        <div class="header__left">
-            <a class="header__logo" href="#">
-                <img src="#" alt="logo">
-            </a>
-
-        </div>
-        <nav class="header__nav">
-            <ul class="header__nav-item-list">
-                <li class="header__nav-item"><a href="#">Specifications</a></li>
-                <li class="header__nav-item"><a href="#">Media</a></li>
-                <li class="header__nav-item"><a href="#">Brochure</a></li>
-                <li class="header__nav-item"><a href="#">Support</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <a class="navbar-brand m-0 p-0" href="#">
+                    <img class="img-logo" src="../img/logo-komatsu.png" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav width-content mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active font-weight-normal" href="#">Specifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active font-weight-normal" href="#">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active font-weight-normal" href="#" tabindex="-1" aria-disabled="true">Brochure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active font-weight-normal" href="#" tabindex="-1" aria-disabled="true">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex">
+                    <button class="btn btn-navyblue pe-4 ps-4" type="submit">Buy now</button>
+                </form>
+            </div>
+            </div>
         </nav>
-        <div class="header__right">
-            <a class="header__btn" href="#">Buy now</a>
-        </div>
-
     </header>
-    <main>
+    <!-- ~header nav -->
+
+    <!-- content -->
+    <main class=" container content">
         <section>
-            <div>
-                <img src="#" 0alt="">
-            </div>
-            <div>
-                <h1>Komatsu PC18 Mini Excavator</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quasi quaerat corrupti, ullam asperiores voluptatem eveniet, quis debitis expedita libero repudiandae cupiditate numquam molestiae consequuntur recusandae odio velit. Qui,
-                    ab!
-                </p>
-                <div>
-                    <div>Online special</div>
-                    <div>Online special 2</div>
+            <div class="row content-start">
+                <div class="col-sm-12 col-lg-6 content-start__left">
+                    <img class="content-start__left__image" src="../img/PC30MR-5.jpg" alt="logo">
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <div>
-                    <a href="#"> Ready to buy?</a>
-                    <p>Enter you...</p>
-                    <div>
-                        <input type="text">
-                        <button> Continue</button>
+                <div class="col-sm-12 col-lg-6 content-start__right">
+                    <h1 class="content-start__title">Komatsu PC18 Mini Excavator</h1>
+                    <p>The PC18MR-3, the smallest digger in Komatsu's mini excavator range, is an ideal machine for any job that requires earthmoving and excavation work in small and confined spaces. It's nimble and compact, but powerful enough to work in
+                        tough and challenging conditions.</p>
+                    <div class="price d-flex justify-content-center">
+                        <div class="price__card p-4">
+                            <p class="price__card__title mb-0">Online special</p>
+                            <p class="price__card__total mb-0">$36,695</h2>
+                                <p class="mb-0">plus GST</p>
+                        </div>
+                        <div class="price__card p-4">
+                            <p class="price__card__title mb-0">Finance</p>
+                            <p class="price__card__total mb-0">$43.98 per day</h2>
+                                <p class="mb-0">plus GST</p>
+                        </div>
+                        <div class="card__price"></div>
                     </div>
-                    <label>I need custom attachments
-                      <input type="checkbox" checked="checked">
-                      <span class="checkmark"></span>
-                    </label>
+                    <div class="note d-flex mt-3">
+                        <span class="material-icons orange600">check_circle</span>
+                        <div class="note__content">
+                            <p><b>Special package</b> includes tilting SF bucket + general purpose bucket + draw pin coupler.</p>
+                            <a class="note__link" href="#">Learn more → </a>
+                        </div>
+                    </div>
+                    <div class="postcode mt-4 mb-5 p-4">
+                        <p class="postcode__title">Ready to buy?</p>
+                        <p>Enter you postcode to start</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Your postcode" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-navyblue " type="button">Checkout</button>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                            I need custom attachments
+                          </label>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
         <section>
-            <h2>Package inclusive</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi iure ullam vel veniam ducimus iusto laborum, odio dolore minus sequi enim voluptatem numquam dolores. Doloribus, modi! Recusandae, dolorem eveniet? Ipsa.</p>
-            <div>
-                <div>
-                    <img src="#" alt="image1">
-                    <a href="#">tilt buckets</a>
-                    <p>Size: 450mm/0.049m</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iste aut mollitia omnis tempore in quo, magni</p>
+            <div class="content-end">
+                <div class="text-center mt-5">
+                    <h2 class="content-end__title">Package inclusive</h2>
+                    <p>Exclusive online savings for those in the Auckland Region.</p>
+                    <p>
+                        No matter what types of material you need to work with, Komatsu has a range of buckets and bucket accessories that help you ensure you can get the best from your PC18MR-3 mini digger. We work closely with Wedgelock Industries, a New Zealand-based, family
+                        owned organisation that is renowned around the world for the quality and diversity of its range of buckets and excavating solutions.</p>
                 </div>
-                <div>
-                    <img src="#" alt="image1">
-                    <a href="#">tilt buckets</a>
-                    <p>Size: 450mm/0.049m</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iste aut mollitia omnis tempore in quo, magni</p>
+                <div class="content-end__card d-flex justify-content-between mt-5">
+                    <div class="content-end__card-item card border-white " style="width: 24rem;">
+                        <img class="card-img-top rounded-bottom" src="../img/istockphoto-849225786-612x612.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tilt buckets</h5>
+                            <p class="card-size">Size: 450mm/0.049m3</p>
+                            <p class="card-text">We can supply a full range of BTX tilt buckets, featuring angled cylinders for greater force, while incorporating all the advantages of Wedgelock's BCX bucket range.</p>
+                        </div>
+
+                    </div>
+                    <div class="content-end__card-item card border-white" style="width: 24rem;">
+                        <img class="card-img-top rounded-bottom" src="../img/TechnicalServices_345x180px.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">General purpose buckets</h5>
+                            <p class="card-size">Size: 930mm/0.102m3</p>
+                            <p class="card-text">The BDX range of buckets, suitable for mini diggers, as well as other excavator sizes, are manufactured using high quality steels, including wear resistant materials to optimise strength, weight and wear properties. As standard,
+                                they include a range of adaptors, tips and bolt-on side cutters. Optional slipper plates can also be supplied.</p>
+                        </div>
+
+                    </div>
+                    <div class="content-end__card-item card border-white" style="width: 24rem;">
+                        <img class="card-img-top rounded-bottom" src="../img/images.jfif" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Draw pin couplers</h5>
+                            <p class="card-size">Size: 450mm/0.049m3</p>
+                            <p class="card-text">If you need to change buckets frequently, the Draw Pin Coupler is a simple coupler developed specifically for mini excavators. It's a low-cost, easy-to-use solution that lets digger operators change attachments just by pulling
+                                a single bucket pin. Draw Pin Couplers include a lifting eye and make a perfect entry level product for mini diggers such as the PC18MR-3.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="#" alt="image1">
-                    <a href="#">tilt buckets</a>
-                    <p>Size: 450mm/0.049m</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iste aut mollitia omnis tempore in quo, magni</p>
+                <div class="content-end__warranty text-center">
+                    <p>warranty</p>
+                    <p>Package to also include warranty information:</p>
+                    <p>12 Months / Unlimited Hours</p>
+                    <p>Plus 48 month / 3000 hours Powertrain Warranty</p>
+                    <p> Whichever event first occurs, from the date of collection/delivery to the original customer</p>
                 </div>
-            </div>
-            <div>
-                <p>Warranty</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione fuga molestias, error, laboriosam perferendis eius, sequi quia ut porro repellat cumque aliquid voluptas atque! Quod corrupti eum saepe. Ad, fugiat.</p>
+                <!--  -->
+                <div class="postcode postcode-pd mt-4 mb-5  d-flex justify-content-around">
+                    <div>
+                        <p class="postcode__title">Ready to buy?</p>
+                        <p>Enter you postcode to start</p>
+                    </div>
+                    <div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Your postcode" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-navyblue " type="button">Checkout</button>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                      I need custom attachments
+                    </label>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
             </div>
 
-        </section>
-        <section>
-            <div>
-                <div>
-                    <a href="#">Ready to buy?</a>
-                    <p>Enter you postcode to start</p>
-                </div>
-                <div>
-                    <div>
-                        <input type="text" name="" id="">
-                        <button>continue</button>
-                    </div>
-                    <label>I need custom attachments
-                  <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
-                </div>
-            </div>
-            <div>
-                <h2>
-                    prefer a call back ?
-                </h2>
-                <button> Contact us</button>
-            </div>
+
         </section>
     </main>
-    <footer>
-        <div>
-            <div>
-                <span class="material-icons-outlined">
-                facebook
-                </span>
-                <span class="iconify" data-icon="mdi-instagram" data-inline="false"></span>
-                <span class="iconify" data-icon="mdi-youtube" data-inline="false"></span>
-            </div>
+    <!-- ~content -->
 
-        </div>
-        <div>
-            <p>Lorem ipsum dolor</p>
-            <p>Lorem ipsum dolor</p>
-            <p>Lorem ipsum dolor</p>
-        </div>
-        <div>
-            <button>Buy now</button>
-            <button>Enquie now</button>
-        </div>
-        <div>
-            <div>
-                <b>Privacy</b>
-                <b>Terms</b>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum blanditiis consequuntur</p>
-            </div>
-        </div>
-    </footer>
-
+    <!-- footer -->
+    <footer>ads</footer>
+    <!-- ~footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 
 </html>
