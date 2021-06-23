@@ -5,7 +5,8 @@
 
 .btn-navyblue {
   background-color: #140A9A;
-  color: white; }
+  color: white;
+  padding: 8px 20px; }
   .btn-navyblue:hover {
     color: whitesmoke; }
 
@@ -55,7 +56,7 @@ body {
       @media (min-width: 768px) and (max-width: 1023px) {
         .content .content-start__left__image {
           width: 500px; } }
-      @media (min-width: 1024px) and (max-width: 1399px) {
+      @media (min-width: 1024px) and (max-width: 1400px) {
         .content .content-start__left__image {
           width: 480px; } }
   .content .content-start__right .content-start__title {
@@ -99,8 +100,132 @@ body {
 .content .content-end__card-item .card-body .card-size {
   font-weight: 700; }
 
-.content .content-end .content-end__warranty {
+.content .content-end__card {
+  display: flex; }
+  @media (max-width: 480px) {
+    .content .content-end__card {
+      display: none; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .content .content-end__card {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .content .content-end__card {
+      display: flex; } }
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .content .content-end__card {
+      display: flex; } }
+
+.content .content-end__carousel {
+  display: none; }
+  .content .content-end__carousel .carousel-item {
+    width: 100%;
+    height: 500px; }
+  .content .content-end__carousel .btn-color {
+    background-color: #141414; }
+  .content .content-end__carousel .carousel-control-prev-icon,
+  .content .content-end__carousel .carousel-control-next-icon {
+    background-color: #FFC82F;
+    border-radius: 50%;
+    color: black; }
+  @media (max-width: 480px) {
+    .content .content-end__carousel {
+      display: block; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .content .content-end__carousel {
+      display: block; } }
+
+.content .content-end__warranty {
   font-size: 14px; }
 
-.content .content-end .postcode-pd {
+.postcode-pd {
   padding: 20px 250px; }
+  @media (max-width: 480px) {
+    .postcode-pd {
+      padding: 10px 10px; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .postcode-pd {
+      padding: 20px 20px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .postcode-pd {
+      padding: 20px 50px; } }
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .postcode-pd {
+      padding: 20px 50px; } }
+
+.contactus__tilte {
+  font-size: 24px;
+  font-weight: 700; }
+
+.contactus__btn {
+  color: #140A9A;
+  background-color: none;
+  padding: 8px 20px;
+  border: 1px #140A9A solid;
+  outline: 0; }
+  .contactus__btn:hover {
+    background-color: #140A9A;
+    color: white; }
+  .contactus__btn:active {
+    background-color: #0901AA;
+    color: white; }
+
+.footer-detail {
+  background-color: #1B232A;
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  padding: 40px 144px; }
+  @media (max-width: 480px) {
+    .footer-detail {
+      display: block;
+      padding: 10px 20px; } }
+  @media (min-width: 480px) and (max-width: 767px) {
+    .footer-detail {
+      display: block;
+      padding: 20px 40px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .footer-detail {
+      display: block;
+      padding: 20px 40px; } }
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .footer-detail {
+      padding: 20px 50px; } }
+  .footer-detail .item2 {
+    grid-area: 1 / 2 / 3 / 3; }
+    .footer-detail .item2 .d-flex .material-icons.orange600 {
+      color: #EEAA02; }
+    @media (min-width: 1024px) and (max-width: 1400px) {
+      .footer-detail .item2 .d-flex {
+        justify-content: center; } }
+    @media (max-width: 480px) {
+      .footer-detail .item2 .d-flex {
+        justify-content: center; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .footer-detail .item2 .d-flex {
+        justify-content: center; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .footer-detail .item2 .d-flex {
+        justify-content: center; } }
+  .footer-detail .item3 {
+    grid-area: 1 / 3 / 3 / 3; }
+    .footer-detail .item3 .contact__btn {
+      color: white;
+      margin: 5px 0;
+      width: 140px;
+      color: white;
+      background-color: none;
+      padding: 8px 20px;
+      border: 1px white solid;
+      outline: 0; }
+      .footer-detail .item3 .contact__btn:hover {
+        background-color: #111111;
+        color: white; }
+      .footer-detail .item3 .contact__btn:active {
+        background-color: black;
+        color: white; }
+  .footer-detail .item4__tilte {
+    font-weight: 700;
+    color: #FFC82F; }
+    .footer-detail .item4__tilte__1 {
+      padding-right: 112px; }

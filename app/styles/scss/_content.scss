@@ -27,6 +27,7 @@ body {
     }
 }
 
+// main
 .content {
     .row {
         --bs-gutter-x: 0;
@@ -112,11 +113,139 @@ body {
                 }
             }
         }
-        .content-end__warranty {
-            font-size: $fs-14;
+        &__card {
+            display: flex;
+            @include mobile1 {
+                display: none;
+            }
+            @include mobile {
+                display: none;
+            }
+            @include tablet {
+                display: flex;
+            }
+            @include desktop {
+                display: flex;
+            }
         }
-        .postcode-pd {
-            padding: 20px 250px;
+        &__carousel {
+            .carousel-item {
+                width: 100%;
+                height: 500px;
+            }
+            .btn-color {
+                background-color: rgb(20, 20, 20);
+            }
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: $yellow-600;
+                border-radius: 50%;
+                color: black;
+            }
+            display: none;
+            @include mobile1 {
+                display: block;
+            }
+            @include mobile {
+                display: block;
+            }
+        }
+    }
+    .content-end__warranty {
+        font-size: $fs-14;
+    }
+}
+
+// ~main
+// postcode
+.postcode-pd {
+    padding: 20px 250px;
+    @include mobile1 {
+        padding: 10px 10px;
+    }
+    @include mobile {
+        padding: 20px 20px;
+    }
+    @include tablet {
+        padding: 20px 50px;
+    }
+    @include desktop {
+        padding: 20px 50px;
+    }
+}
+
+.contactus {
+    &__tilte {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__btn {
+        @include btn-defaul($navyblue-600, $navyblue-600, $navyblue-600, white, $navyblue-700, white);
+    }
+}
+
+//end postcode
+// footer
+.footer-detail {
+    background-color: $black-500;
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    padding: 40px 144px;
+    @include mobile1 {
+        display: block;
+        padding: 10px 20px;
+    }
+    @include mobile {
+        display: block;
+        padding: 20px 40px;
+    }
+    @include tablet {
+        display: block;
+        padding: 20px 40px;
+    }
+    @include desktop {
+        padding: 20px 50px;
+    }
+    .item2 {
+        grid-area: 1 / 2 / 3 / 3;
+        .d-flex {
+            .material-icons.orange600 {
+                color: $yellow-900;
+            }
+            @include desktop {
+                justify-content: center;
+            }
+            @include mobile1 {
+                justify-content: center;
+            }
+            @include mobile {
+                justify-content: center;
+            }
+            @include tablet {
+                justify-content: center;
+            }
+        }
+    }
+    .item3 {
+        grid-area: 1 / 3 / 3 / 3;
+        .contact__btn {
+            color: white;
+            margin: 5px 0;
+            width: 140px;
+            @include btn-defaul(white, white, rgb(17, 17, 17), white, rgb(0, 0, 0), white);
+        }
+    }
+    .item4 {
+        &__tilte {
+            font-weight: 700;
+            color: $yellow-600;
+            &__1 {
+                padding-right: 112px;
+            }
         }
     }
 }
+
+//~ footer

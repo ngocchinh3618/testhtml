@@ -1,7 +1,32 @@
 .btn-navyblue {
     background-color: $navyblue-600;
     color: white;
+    padding: 8px 20px;
     &:hover {
         color: whitesmoke;
+    }
+}
+
+@mixin btn-defaul1($color, $bg-color, $p-te, $p-lr, $fsize) {
+    color: $color;
+    background-color: $bg-color;
+    padding: $p-te $p-lr;
+    font-size: $fsize;
+    outline: 0;
+}
+
+@mixin btn-defaul($color, $bd-color, $bg-color-hover, $color-hover, $bg-color-act, $color-act) {
+    color: $color;
+    background-color: none;
+    padding: 8px 20px;
+    border: 1px $bd-color solid;
+    outline: 0;
+    &:hover {
+        background-color: $bg-color-hover;
+        color: $color-hover;
+    }
+    &:active {
+        background-color: $bg-color-act;
+        color: $color-act;
     }
 }
