@@ -119,7 +119,7 @@ body {
   display: none; }
   .content .content-end__carousel .carousel-item {
     width: 100%;
-    height: 500px; }
+    height: 560px; }
   .content .content-end__carousel .btn-color {
     background-color: #141414; }
   .content .content-end__carousel .carousel-control-prev-icon,
@@ -127,6 +127,9 @@ body {
     background-color: #FFC82F;
     border-radius: 50%;
     color: black; }
+  .content .content-end__carousel .carousel-control-prev,
+  .content .content-end__carousel .carousel-control-next {
+    top: -360px; }
   @media (max-width: 480px) {
     .content .content-end__carousel {
       display: block; } }
@@ -138,16 +141,20 @@ body {
   font-size: 14px; }
 
 .postcode-pd {
+  display: flex;
   padding: 20px 250px; }
   @media (max-width: 480px) {
     .postcode-pd {
-      padding: 10px 10px; } }
+      padding: 10px 10px;
+      display: block; } }
   @media (min-width: 480px) and (max-width: 767px) {
     .postcode-pd {
-      padding: 20px 20px; } }
+      padding: 20px 20px;
+      display: block; } }
   @media (min-width: 768px) and (max-width: 1023px) {
     .postcode-pd {
-      padding: 20px 50px; } }
+      padding: 20px 50px;
+      display: block; } }
   @media (min-width: 1024px) and (max-width: 1400px) {
     .postcode-pd {
       padding: 20px 50px; } }
