@@ -30,3 +30,32 @@
         color: $color-act;
     }
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 236px;
+    right: 80px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $grey-500;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 35px;
+    font-size: 0;
+    @include mobile {
+        bottom: 236px;
+        right: 20px;
+    }
+    @include tablet {
+        bottom: 236px;
+        right: 40px;
+    }
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
