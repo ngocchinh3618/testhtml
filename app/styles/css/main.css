@@ -34,8 +34,7 @@
       right: 40px; } }
 
 #myBtn:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */ }
+  background-color: #555; }
 
 .postcode {
   background-color: #FFC82F; }
@@ -106,7 +105,7 @@ body {
   .content .content-start__right .note .material-icons.orange600 {
     color: #EEAA02; }
   .content .content-start__right .note__content {
-    margin-left: 5px; }
+    margin-left: 4px; }
     .content .content-start__right .note__content .note__link {
       text-decoration: none;
       color: #140A9A;
@@ -172,7 +171,7 @@ body {
   padding: 20px 250px; }
   @media (max-width: 480px) {
     .postcode-pd {
-      padding: 10px 10px;
+      padding: 8px 8px;
       display: block; } }
   @media (min-width: 480px) and (max-width: 767px) {
     .postcode-pd {
@@ -184,7 +183,7 @@ body {
       display: block; } }
   @media (min-width: 1024px) and (max-width: 1400px) {
     .postcode-pd {
-      padding: 20px 50px; } }
+      padding: 20px 48px; } }
 
 .contactus__tilte {
   font-size: 24px;
@@ -209,7 +208,8 @@ body {
   width: 100%;
   display: grid;
   grid-gap: 10px;
-  padding: 40px 144px; }
+  padding: 40px 144px;
+  grid-template-columns: 1fr 1fr 1fr; }
   @media (max-width: 480px) {
     .footer-detail {
       display: block;
@@ -247,7 +247,7 @@ body {
     grid-area: 1 / 3 / 3 / 3; }
     .footer-detail .item3 .contact__btn {
       color: white;
-      margin: 5px;
+      margin: 4px;
       width: 140px;
       color: white;
       background-color: none;
@@ -264,19 +264,24 @@ body {
       .footer-detail .item3 {
         display: block;
         justify-content: center;
-        margin: 5px 5px !important; } }
+        margin: 4px 4px !important; } }
     @media (min-width: 480px) and (max-width: 767px) {
       .footer-detail .item3 {
         display: flex;
         justify-content: center;
-        margin: 5px 5px !important; } }
+        margin: 4px 4px !important; } }
     @media (min-width: 768px) and (max-width: 1023px) {
       .footer-detail .item3 {
         display: flex;
         justify-content: center;
-        margin: 5px 5px !important; } }
+        margin: 4px 4px !important; } }
   .footer-detail .item4__tilte {
     font-weight: 700;
     color: #FFC82F; }
     .footer-detail .item4__tilte__1 {
       padding-right: 112px; }
+  .footer-detail .item4__content {
+    display: flex;
+    justify-content: center; }
+    .footer-detail .item4__content__address {
+      width: 300px; }

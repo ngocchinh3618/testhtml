@@ -63,8 +63,23 @@
                 </div>
                 <div class="col-sm-12 col-lg-6 content-start__right">
                     <h1 class="content-start__title">Komatsu PC18 Mini Excavator</h1>
-                    <p>The PC18MR-3, the smallest digger in Komatsu's mini excavator range, is an ideal machine for any job that requires earthmoving and excavation work in small and confined spaces. It's nimble and compact, but powerful enough to work in
-                        tough and challenging conditions.</p>
+                    <!-- tabs content -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Review </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3 mb-3" id="myTabContent" style="height: 84px;">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            The PC18MR-3, the smallest digger in Komatsu's mini excavator range, is an ideal machine for any job that requires earthmoving and excavation work in small and confined spaces. It's nimble and compact, but powerful enough to work in tough and challenging
+                            conditions.
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione in totam natus, architecto, adipisci a, libero soluta saepe esse earum perspiciatis optio et culpa! Laboriosam labore illo repellat facere!</div>
+                    </div>
+                    <!-- ~ tabs content -->
                     <div class="price d-flex justify-content-center">
                         <div class="price__card p-4">
                             <p class="price__card__title mb-0">Online special</p>
@@ -98,9 +113,9 @@
                     <form autocomplete="on">
                         <div class="form-group postcode mt-4 mb-5 p-4">
                             <p class="postcode__title">Ready to buy?</p>
-                            <p>Enter you postcode to start</p>
+                            <p for="fname">Enter you postcode to start</p>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Your postcode" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input id="fname" type="text" class="form-control" placeholder="Your postcode" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-navyblue " type="submit">Continue</button>
                                 </div>
@@ -111,6 +126,7 @@
                             </div>
                         </div>
                     </form>
+
                     <!-- checkbox-custom  postcode-->
 
                 </div>
@@ -230,27 +246,30 @@
     <!-- ~content -->
     <section>
         <!--postcode -->
-        <form>
+        <form autocomplete="on">
             <div class="form-group postcode postcode-pd mt-4 mb-5  justify-content-around">
                 <div>
                     <p class="postcode__title">Ready to buy?</p>
-                    <p>Enter you postcode to start</p>
+                    <p for="fname">Enter you postcode to start</p>
                 </div>
                 <div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Your postcode" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input id="fname" type="text" class="form-control" placeholder="Your postcode" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <button class="btn btn-navyblue " type="submit">Continue</button>
                         </div>
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                        <label class="form-check-label" for="exampleCheck2 ">I need custom attachments</label>
+                        <label class="form-check-label" for="exampleCheck2">I need custom attachments</label>
                     </div>
                 </div>
 
             </div>
         </form>
+
+
+
         <!-- ~ postcode -->
         <!-- contact -->
         <div class="contactus text-center">
@@ -302,7 +321,9 @@
                         Terms
                     </div>
                 </div>
-                <p class="item4__address">© 2021 Komatsu New Zealand (NZBN: 9429035435785), a </br> of Komatsu Australia Pty Ltd (ABN 71 143 476 626).</br> All rights reserved.</p>
+                <div class="item4__content">
+                    <p class="item4__content__address">© 2021 Komatsu New Zealand (NZBN: 9429035435785), a of Komatsu Australia Pty Ltd (ABN 71 143 476 626). All rights reserved.</p>
+                </div>
             </div>
         </section>
     </footer>
