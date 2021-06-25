@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
     <!-- header nav -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -93,6 +93,8 @@
                         </div>
                         <div class="card__price"></div>
                     </div>
+                    <!--  -->
+                    <!--  -->
 
                     <!-- show-more-content -->
                     <div class="note d-flex mt-3">
@@ -120,10 +122,11 @@
                                     <button class="btn btn-navyblue " type="submit">Continue</button>
                                 </div>
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">I need custom attachments</label>
-                            </div>
+                            <label class="checkbox-custom">I need custom attachments
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                              <p  class="smail-text">The attachments will be sent to you</p>
+                            </label>
                         </div>
                     </form>
 
@@ -139,7 +142,8 @@
                     <p>Exclusive online savings for those in the Auckland Region.</p>
                     <p>
                         No matter what types of material you need to work with, Komatsu has a range of buckets and bucket accessories that help you ensure you can get the best from your PC18MR-3 mini digger. We work closely with Wedgelock Industries, a New Zealand-based, family
-                        owned organisation that is renowned around the world for the quality and diversity of its range of buckets and excavating solutions.</p>
+                        owned organisation that is renowned around the world for the quality and diversity of its range of buckets and excavating solutions.</p>\
+
                 </div>
                 <!-- content-end__card -->
                 <div class="content-end__card justify-content-between mt-5">
@@ -176,7 +180,8 @@
                 </div>
                 <!-- ~content-end__card -->
                 <!-- content-end__card__carousel -->
-                <div id="carouselExampleIndicators" class="content-end__carousel carousel slide" data-bs-ride="carousel">
+
+                <!-- <div id="carouselExampleIndicators" class="content-end__carousel carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="btn-color active" aria-current="true" aria-label="Slide 1"></button>
                         <button class="btn-color" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -227,7 +232,8 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
-                </div>
+                </div> -->
+
                 <!-- ~content-end__card__carousel -->
 
             </div>
@@ -252,17 +258,20 @@
                     <p class="postcode__title">Ready to buy?</p>
                     <p for="fname">Enter you postcode to start</p>
                 </div>
-                <div>
+                <div class="form-checkbox">
                     <div class="input-group mb-3">
                         <input id="fname" type="text" class="form-control" placeholder="Your postcode" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <button class="btn btn-navyblue " type="submit">Continue</button>
                         </div>
                     </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                        <label class="form-check-label" for="exampleCheck2">I need custom attachments</label>
-                    </div>
+                    <label class="checkbox-custom">I need custom attachment
+                      <input type="checkbox" checked="checked">
+                      <!-- <span class="checkmark"></span> -->
+                      <span class="checkmark"></span>
+                      <p class="checkmark1">Lorhgjghjghem </p>
+                      
+                    </label>
                 </div>
 
             </div>
@@ -327,6 +336,13 @@
             </div>
         </section>
     </footer>
+    <!-- <button id="myBtn" title="Go to top" onclick="myVar = setTimeout(topFunction(), 9000)">
+      <span class="material-icons"><a href="#top" onclick="scrollToTop();return false">&uarr;</a></span>
+      
+    </button> -->
+    <button id="myBtn" onclick="topFunction()" id="myBtn" title="Go to top">
+      <span class="material-icons">arrow_upward</span>
+    </button>
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <span class="material-icons">arrow_upward</span>
     </button>

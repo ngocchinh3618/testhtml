@@ -43,6 +43,58 @@
     font-weight: 600;
     font-size: 20px; }
 
+.checkbox-custom {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .checkbox-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .checkbox-custom .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #eee; }
+
+.checkbox-custom:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+.checkbox-custom input:checked ~ .checkmark {
+  background-color: #140A9A; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.checkbox-custom input:checked ~ .checkmark:after {
+  display: block; }
+
+.checkbox-custom .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.checkbox-custom__smail-text:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
 body {
   background-color: #f5f3f3;
   font-family: 'Open Sans', sans-serif;
@@ -110,6 +162,12 @@ body {
       text-decoration: none;
       color: #140A9A;
       font-weight: 900; }
+    .content .content-start__right .note__content__text {
+      white-space: nowrap;
+      width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border: 1px solid #000000; }
 
 .content .content-end__title {
   font-size: 24px;
@@ -229,20 +287,22 @@ body {
     grid-area: 1 / 2 / 3 / 3; }
     .footer-detail .item2__content {
       width: 224px; }
-    .footer-detail .item2 .d-flex .material-icons.orange600 {
-      color: #EEAA02; }
-    @media (min-width: 1024px) and (max-width: 1400px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
-    @media (max-width: 480px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
-    @media (min-width: 480px) and (max-width: 767px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
+    .footer-detail .item2 .d-flex {
+      justify-content: center; }
+      .footer-detail .item2 .d-flex .material-icons.orange600 {
+        color: #EEAA02; }
+      @media (min-width: 1024px) and (max-width: 1400px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
+      @media (max-width: 480px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
   .footer-detail .item3 {
     grid-area: 1 / 3 / 3 / 3; }
     .footer-detail .item3 .contact__btn {
@@ -284,4 +344,5 @@ body {
     display: flex;
     justify-content: center; }
     .footer-detail .item4__content__address {
-      width: 300px; }
+      width: 436px;
+      text-align: left; }

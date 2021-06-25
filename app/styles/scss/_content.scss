@@ -89,6 +89,13 @@ body {
                         color: $navyblue-600;
                         font-weight: $fw-9;
                     }
+                    &__text {
+                        white-space: nowrap;
+                        width: 150px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        border: 1px solid #000000;
+                    }
                 }
             }
         }
@@ -223,6 +230,7 @@ body {
             width: 224px;
         }
         .d-flex {
+            justify-content: center;
             .material-icons.orange600 {
                 color: $yellow-900;
             }
@@ -276,7 +284,8 @@ body {
             display: flex;
             justify-content: center;
             &__address {
-                width: 300px;
+                width: 436px;
+                text-align: left;
             }
         }
     }
