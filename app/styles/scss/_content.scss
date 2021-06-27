@@ -95,6 +95,7 @@ body {
                         overflow: hidden;
                         text-overflow: ellipsis;
                         border: 1px solid #000000;
+                        -webkit-line-clamp: 2;
                     }
                 }
             }
@@ -291,4 +292,5 @@ body {
     }
 }
 
+$tooltip-bg: black;
 //~ footer
