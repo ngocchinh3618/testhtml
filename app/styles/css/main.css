@@ -11,7 +11,6 @@
     color: whitesmoke; }
 
 #myBtn {
-  display: none;
   position: fixed;
   bottom: 236px;
   right: 80px;
@@ -42,6 +41,102 @@
     color: #140A9A;
     font-weight: 600;
     font-size: 20px; }
+  .postcode .smail-text {
+    font-size: 12px; }
+
+.checkbox-custom {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .checkbox-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .checkbox-custom .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #eee; }
+
+.checkbox-custom:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+.checkbox-custom input:checked ~ .checkmark {
+  background-color: #140A9A; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.checkbox-custom input:checked ~ .checkmark:after {
+  display: block; }
+
+.checkbox-custom .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.checkbox-custom__smail-text:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.autocomplete {
+  position: relative;
+  display: inline-block; }
+  .autocomplete input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px; }
+  .autocomplete input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%; }
+  .autocomplete input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer; }
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0; }
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4; }
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; }
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff; }
 
 body {
   background-color: #f5f3f3;
@@ -55,6 +150,30 @@ body {
     @media (max-width: 480px) {
       .header .navbar .container .img-logo {
         width: 200px; } }
+  .header .navbar .container .d-flex .nav-btn1 {
+    display: none; }
+    @media (max-width: 480px) {
+      .header .navbar .container .d-flex .nav-btn1 {
+        display: block; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .header .navbar .container .d-flex .nav-btn1 {
+        display: block; } }
+  .header .navbar .container .d-flex .nav-btn2 {
+    display: block; }
+    @media (max-width: 480px) {
+      .header .navbar .container .d-flex .nav-btn2 {
+        display: none; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .header .navbar .container .d-flex .nav-btn2 {
+        display: none; } }
+  .header .navbar .container .navbar-collapse .navbar-nav {
+    width: 100%; }
+    .header .navbar .container .navbar-collapse .navbar-nav a {
+      padding-left: 10px; }
+    .header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover {
+      background-color: #FFC82F; }
+      .header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover a {
+        color: black; }
   .header .navbar .container .width-content {
     width: 90%;
     justify-content: space-around;
@@ -87,6 +206,8 @@ body {
           width: 480px; } }
   .content .content-start__right .content-start__title {
     font-size: 52px; }
+  .content .content-start__right .tab-content {
+    height: 116px !important; }
   .content .content-start__right .price__card {
     width: 300px;
     color: white;
@@ -110,6 +231,13 @@ body {
       text-decoration: none;
       color: #140A9A;
       font-weight: 900; }
+    .content .content-start__right .note__content__text {
+      white-space: nowrap;
+      width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border: 1px solid #000000;
+      -webkit-line-clamp: 2; }
 
 .content .content-end__title {
   font-size: 24px;
@@ -143,7 +271,11 @@ body {
 
 .content .content-end__carousel {
   display: none; }
+  .content .content-end__carousel .carousel-indicators .list-inline-item .img-thumbnail {
+    width: 126px;
+    height: 80px; }
   .content .content-end__carousel .carousel-item {
+    background-color: none;
     width: 100%;
     height: 560px; }
   .content .content-end__carousel .btn-color {
@@ -229,20 +361,22 @@ body {
     grid-area: 1 / 2 / 3 / 3; }
     .footer-detail .item2__content {
       width: 224px; }
-    .footer-detail .item2 .d-flex .material-icons.orange600 {
-      color: #EEAA02; }
-    @media (min-width: 1024px) and (max-width: 1400px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
-    @media (max-width: 480px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
-    @media (min-width: 480px) and (max-width: 767px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
-    @media (min-width: 768px) and (max-width: 1023px) {
-      .footer-detail .item2 .d-flex {
-        justify-content: center; } }
+    .footer-detail .item2 .d-flex {
+      justify-content: center; }
+      .footer-detail .item2 .d-flex .material-icons.orange600 {
+        color: #EEAA02; }
+      @media (min-width: 1024px) and (max-width: 1400px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
+      @media (max-width: 480px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
+      @media (min-width: 480px) and (max-width: 767px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .footer-detail .item2 .d-flex {
+          justify-content: center; } }
   .footer-detail .item3 {
     grid-area: 1 / 3 / 3 / 3; }
     .footer-detail .item3 .contact__btn {
@@ -284,4 +418,5 @@ body {
     display: flex;
     justify-content: center; }
     .footer-detail .item4__content__address {
-      width: 300px; }
+      width: 436px;
+      text-align: left; }
