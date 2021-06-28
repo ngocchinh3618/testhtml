@@ -41,6 +41,8 @@
     color: #140A9A;
     font-weight: 600;
     font-size: 20px; }
+  .postcode .smail-text {
+    font-size: 12px; }
 
 .checkbox-custom {
   display: block;
@@ -148,6 +150,30 @@ body {
     @media (max-width: 480px) {
       .header .navbar .container .img-logo {
         width: 200px; } }
+  .header .navbar .container .d-flex .nav-btn1 {
+    display: none; }
+    @media (max-width: 480px) {
+      .header .navbar .container .d-flex .nav-btn1 {
+        display: block; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .header .navbar .container .d-flex .nav-btn1 {
+        display: block; } }
+  .header .navbar .container .d-flex .nav-btn2 {
+    display: block; }
+    @media (max-width: 480px) {
+      .header .navbar .container .d-flex .nav-btn2 {
+        display: none; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .header .navbar .container .d-flex .nav-btn2 {
+        display: none; } }
+  .header .navbar .container .navbar-collapse .navbar-nav {
+    width: 100%; }
+    .header .navbar .container .navbar-collapse .navbar-nav a {
+      padding-left: 10px; }
+    .header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover {
+      background-color: #FFC82F; }
+      .header .navbar .container .navbar-collapse .navbar-nav .nav-item:hover a {
+        color: black; }
   .header .navbar .container .width-content {
     width: 90%;
     justify-content: space-around;
@@ -180,6 +206,8 @@ body {
           width: 480px; } }
   .content .content-start__right .content-start__title {
     font-size: 52px; }
+  .content .content-start__right .tab-content {
+    height: 116px !important; }
   .content .content-start__right .price__card {
     width: 300px;
     color: white;
@@ -243,7 +271,11 @@ body {
 
 .content .content-end__carousel {
   display: none; }
+  .content .content-end__carousel .carousel-indicators .list-inline-item .img-thumbnail {
+    width: 126px;
+    height: 80px; }
   .content .content-end__carousel .carousel-item {
+    background-color: none;
     width: 100%;
     height: 560px; }
   .content .content-end__carousel .btn-color {
