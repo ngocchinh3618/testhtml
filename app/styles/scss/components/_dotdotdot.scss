@@ -1,0 +1,66 @@
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  min-width: 220px;
+  .example {
+    line-height: 30px;
+    overflow: hidden;
+    .material-icons.orange600 {
+            color: $yellow-900;
+        }
+  }
+  .toggle{
+    margin-left: 30px;
+    text-decoration: none;
+    color: $navyblue-600;
+    font-weight: $fw-9;
+  }
+}
+
+
+.example > div {
+  max-height: 100px;
+}
+
+/* readable pathnames */
+.example ul,
+.example ol,
+.example li {
+  display: block;
+  list-style: none;
+}
+.example li {
+  height: 35px;
+  padding: 7px 0;
+}
+.example li + li {
+  border-top: 1px solid rgba( 255, 255, 255, 0.2 );
+}
+
+/* toggle full story */
+.example > .full-story {
+  max-height: initial;
+}
+.example .toggle:before {
+  content: 'Learn more 🠗';
+}
+.example > .full-story .toggle:before {
+  content: 'Learn more ↑';
+}
+
+.oldbrowser {
+  display: none;
+}
+@media screen and (min-width:0\0) {
+  .oldbrowser {
+    background: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    display: block;
+    padding: 50px;
+    margin: 50px -50px;
+  }
+}

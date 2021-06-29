@@ -59,21 +59,10 @@ $(document).ready(function() {
     //~ count text
 
     // note content
-    // $('.note__content > p')
-    var status = true;
-    $('.note__link').click(function(e) {
-        if (status) {
-            $('.note__content > p').html("<p><b>Special package</b> includes tilting SF bucket + general purpose bucket + draw pin coupler. Some placeholder the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. </p>")
-            $('.note__link').html("Learn more 🠕 ")
-        } else {
-            $('.note__content > p').html("<p><b>Special package</b> includes tilting SF bucket + general purpose bucket + draw pin coupler. Some placeholder... </p>")
-            $('.note__link').html("Learn more 🠗 ")
-        }
-        status = !status;
-
-    });
+  
     //~ note content
     // modal
     $("#datepicker").datepicker();
     //~ modal
+    
 });

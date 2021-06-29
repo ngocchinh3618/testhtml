@@ -115,27 +115,6 @@ body {
                     }
                 }
             }
-            .note {
-                .material-icons.orange600 {
-                    color: $yellow-900;
-                }
-                &__content {
-                    margin-left: $mg-0;
-                    .note__link {
-                        text-decoration: none;
-                        color: $navyblue-600;
-                        font-weight: $fw-9;
-                    }
-                    &__text {
-                        white-space: nowrap;
-                        width: 150px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        border: 1px solid #000000;
-                        -webkit-line-clamp: 2;
-                    }
-                }
-            }
         }
     }
     .content-end {
